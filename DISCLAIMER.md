@@ -3,7 +3,7 @@
 This repository is **portfolio / archival material only**.
 
 - DigiMusic TV is not presented as a live product.
-- Channel embeds (QuickTime, KickApps Flash) will not play in modern browsers.
+- QuickTime channel embeds will not play in modern browsers.
 - Snippets are historical excerpts, not a deployable streaming platform.
 - No warranty is offered, express or implied.
 

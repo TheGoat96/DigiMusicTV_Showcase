@@ -1,6 +1,6 @@
 # Timeline — dated proof
 
-Filesystem timestamps from the original DigiMusic archive on disk (macOS birth + modified). These are the receipts that this work lived in **2007–2009**, during the same early consumer-streaming window as Netflix Watch Instantly (2007) and Hulu’s public launch (2008).
+Filesystem timestamps from the original DigiMusic archive on disk (macOS birth + modified). These are the receipts that this work lived in **2008**, during the same early consumer-streaming window as Netflix Watch Instantly (2007) and Hulu’s public launch (2008).
 
 > Showcase copies under this repo preserve those original **modified** dates where possible. Git itself does not store filesystem birthtime — the table below is the durable proof record.
 
@@ -31,21 +31,18 @@ DigiMusic TV was an **independent niche music-community network** built and oper
 | **2008-08-22** | `Alternative Solution Brochure.pdf` | Media kit / sponsor positioning |
 | **2008-10-08** | `DigiMusic Tv.com[FW4].freeway` | Freeway site project (authoring source) |
 | **2008-11-09** | `broadcast4.html` | QuickTime Digi player channel export |
-| **2009-03-06** | `broadcast.html`, `default.html`, mission/advertise/connect… | KickApps live-console site export |
-| **2009-11-14** | `DigiMusic Tv.com.freeway` (last modified) | Continued site maintenance |
 
-Contract / media-kit / royalty files in [`receipts/`](./receipts) and channel pages in [`site-archive/`](./site-archive) correspond to these rows.
+Contract / media-kit / royalty files in [`receipts/`](./receipts) and the Digi player page in [`site-archive/`](./site-archive) correspond to these rows.
 
 ---
 
-## Channel tech progression (dated)
+## Channel progression (dated)
 
 ```text
 2008-03 ── content deals + PSA paperwork
 2008-06 ── royalty reporting in place
 2008-08 ── media kit brochure
 2008-11 ── broadcast4.html  → QuickTime Digi player (.mov channel)
-2009-03 ── broadcast.html   → KickApps live console (affiliate 73727)
 ```
 
 ---
@@ -58,7 +55,6 @@ From this repo (or the original Memory folders):
 # macOS: birth + modified
 stat -f "%SB  %Sm  %N" -t "%Y-%m-%d" \
   site-archive/broadcast4.html \
-  site-archive/broadcast.html \
   "receipts/media-kit/Alternative Solution Brochure.pdf" \
   "receipts/contracts/What is Indie Contract.pdf" \
   "receipts/royalty/Stand Alone Productions Royalty Report.numbers"

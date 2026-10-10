@@ -101,8 +101,6 @@ These are original archive timestamps — the “I was building this then” evi
 
 ### Contract preview images
 
-Full fax PDFs are omitted (GitHub’s viewer shows them blank). PNG scans instead:
-
 **What is Indie — Content Broadcasting Agreement** (first + last page)
 
 ![What is Indie page 1](./receipts/contract-previews/what-is-indie-page-01-of-06.png)
@@ -128,6 +126,9 @@ Full fax PDFs are omitted (GitHub’s viewer shows them blank). PNG scans instea
 | `broadcast4.html` (2008-11-09) | Custom Digi player UI; QuickTime autoplay of channel `.mov` (e.g. `movies/bluecataudiopr2.mov`) |
 
 Illustrative embed: [`snippets/01-quicktime-channel-embed.html`](./snippets/01-quicktime-channel-embed.html).
+
+<img width="802" height="552" alt="Screenshot 2026-10-10 at 7 44 49 PM" src="https://github.com/user-attachments/assets/0755e385-8f26-47a8-aebc-41892a1ca799" />
+
 
 ---
 

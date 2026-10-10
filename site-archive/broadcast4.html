@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv=Content-Type content="text/html; charset=ISO-8859-1"><title>DigiMusic Tv Channel</title><meta name="viewport" content="width = 800, mimimum-scale = 0.25, maximum-scale = 1.60"><meta name="GENERATOR" content="Freeway 4 Pro 4.4.0"><style type="text/css"><!-- body { margin:0px; background-image:url(Resources/compactbackgrounda.jpg); height:100% }html { height:100% }img { margin:0px; border-style:none }button { margin:0px; border-style:none; padding:0px; background-color:transparent; vertical-align:top }p:first-child { margin-top:0px }table { empty-cells:hide }.f-sp { font-size:1px; visibility:hidden }.f-lp { margin-bottom:0px }.f-fp { margin-top:0px }.f-x1 {  }.f-x2 {  }.f-x3 {  }strong { font-weight:bold }--></style><!--[if lt IE 7]><link rel=stylesheet type="text/css" href="css/ie6.css"><![endif]-->
+<script type="text/javascript">//<![CDATA[
+var usingIEFix = false;
+//]]></script>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">//<![CDATA[
+usingIEFix = true;
+//]]></script>
+<![endif]-->
+<script type="text/javascript">//<![CDATA[
+function FWStripFileFromFilterString(filterString)
+{
+	var start,end;
+	var strSrc = "src='";
+	var strRes = "";
+
+	start = filterString.indexOf(strSrc);
+
+	if(start != -1)
+	{
+		start += strSrc.length;
+		
+		end = filterString.indexOf("',",start);
+		if(end != -1)
+		{
+			strRes = filterString.substring(start,end);
+		}
+	}
+
+	return strRes;
+}
+
+var fwIsNetscape = navigator.appName == 'Netscape';
+
+fwLoad = new Object;
+function FWLoad(image)
+{
+	if (!document.images)
+		return null;
+	if (!fwLoad[image])
+	{
+		fwLoad[image]=new Image;
+		fwLoad[image].src=image;
+	}
+	return fwLoad[image].src;
+}
+
+fwRestore = new Object;
+function FWRestore(msg,chain) 
+{
+	if (document.images) 
+		for (var i in fwRestore)
+		{
+			var r = fwRestore[i];
+			if (r && (!chain || r.chain==chain) && r.msg==msg)
+			{
+				r.src = FWLoad(r.old);
+				fwRestore[i]=null;
+			}
+		}
+}
+
+function FWLSwap(name,msg,newImg,layer,chain,trigger) 
+{
+	var r = fwRestore[name];
+	if (document.images && (!r || r.msg < msg)) 
+	{
+		var uselayers = fwIsNetscape && document.layers && layer != '';
+		var hld;
+		if (uselayers)
+			hld = document.layers[layer].document;
+		else
+			hld = document;
+		var im = hld.getElementById(name);
+		if (!im.old)
+		{
+			if(usingIEFix && im.runtimeStyle.filter)
+				im.old = FWStripFileFromFilterString(im.runtimeStyle.filter);
+			else
+				im.old = im.src;
+		}
+		
+		im.msg = msg;
+		im.chain = chain;
+		im.trigger = trigger;
+		if (newImg) im.src = FWLoad(newImg);
+		fwRestore[name] = im;
+	}
+}
+
+function FWCallHit(func,targNum,msg)
+{
+	if(func)
+		for (var i in func)
+			func[i](targNum,msg);
+}
+function FW_Hit(frameset,chain,targNum,msg)
+{
+	if (frameset && frameset.length)
+		for (var i=0 ; i <frameset.length ; i++)
+		{
+			try
+			{
+				FW_Hit(frameset[i].frames,chain,targNum,msg);
+				FWCallHit(top["FT_"+chain],targNum,msg);
+				FWCallHit(frameset[i].window["FT_"+chain],targNum,msg);
+			}
+			catch(err)
+			{
+			}
+		}
+	else
+		FWCallHit(window["FT_"+chain],targNum,msg);
+}
+
+fwHit = new Object;
+function FWSlave(frameset,chain,targNum,msg)
+{
+	if (msg==1) fwHit[chain]=targNum;
+	FW_Hit(frameset,chain,targNum,1);
+}
+
+function FWSRestore(frameset,chain)
+{
+	var hit=fwHit[chain];
+	if (hit)
+		FW_Hit(frameset,chain,hit,0);
+	fwHit[chain]=null;
+}
+function FWPreload(){FWLoad("Resources/advertise2aa.gif");FWLoad("Resources/advertise2a.gif");FWLoad("Resources/dmtchannelguide1a.gif");FWLoad("Resources/dmtchannelguide1.gif");FWLoad("Resources/dmtadvertisea.gif");FWLoad("Resources/dmtadvertise.gif");FWLoad("Resources/helpa.gif");FWLoad("Resources/help.gif");}//]]></script></head><body onload="FWPreload()"><div id="PageDiv" style="position:relative; min-height:100%; margin:auto; width:800px"><table border=0 cellspacing=0 cellpadding=0 width=801><colgroup><col width=1><col width=4><col width=2><col width=8><col width=5><col width=109><col width=6><col width=2><col width=13><col width=72><col width=15><col width=2><col width=5><col width=29><col width=21><col width=84><col width=8><col width=5><col width=2><col width=104><col width=2><col width=5><col width=31><col width=1><col width=7><col width=8><col width=6><col width=132><col width=20><col width=3><col width=45><col width=26><col width=4><col width=13><col width=1></colgroup><tr valign=top><td height=10 colspan=34 valign=bottom><img src="Resources/digiplayerbackgr.jpeg" border=0 width=800 height=10 alt="digiplayerbackground2" style="float:left"></td><td height=10></td></tr><tr valign=top><td height=48 colspan=2 valign=middle><img src="Resources/digiplayerbackgra.jpeg" border=0 width=5 height=48 alt="digiplayerbackground2" style="float:left"></td><td height=48 colspan=13><a href="default.html" target="_blank"><img src="Resources/digimusictvcomloa.jpeg" border=0 width=289 height=48 alt="DigiMusicTvcomLogoBluewords" style="float:left"></a></td><td height=48 colspan=19 valign=middle><img src="Resources/digiplayerbackgrb.jpeg" border=0 width=506 height=48 alt="digiplayerbackground2" style="float:left"></td><td height=48></td></tr><tr valign=top><td height=15 colspan=34 valign=middle><img src="Resources/digiplayerbackgrc.jpeg" border=0 width=800 height=15 alt="digiplayerbackground2" style="float:left"></td><td height=15></td></tr><tr valign=top><td height=12 colspan=28 valign=middle><img src="Resources/digiplayerbackgrd.jpeg" border=0 width=689 height=12 alt="digiplayerbackground2" style="float:left"></td><td height=12 colspan=4><a href="advertise.html" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img1',1,'Resources/advertise2a.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/advertise2aa.gif" border=0 width=94 height=12 alt="" style="float:left" id="img1"></a></td><td height=12 colspan=2 valign=middle><img src="Resources/digiplayerbackgre.jpeg" border=0 width=17 height=12 alt="digiplayerbackground2" style="float:left"></td><td height=12></td></tr><tr valign=top><td height=10 colspan=34 valign=middle><img src="Resources/digiplayerbackgrf.jpeg" border=0 width=800 height=10 alt="digiplayerbackground2" style="float:left"></td><td height=10></td></tr><tr valign=top><td height=425 colspan=3 rowspan=17 valign=middle><img src="Resources/digiplayerbackgrg.jpeg" border=0 width=7 height=425 alt="digiplayerbackground2" style="float:left"></td><td height=399 colspan=23 rowspan=10 valign=bottom><img src="Resources/digiplayerbackgrh.jpeg" border=0 width=544 height=399 alt="digiplayerbackground" style="float:left"></td><td height=15 colspan=8 valign=middle><img src="Resources/digiplayerbackgri.jpeg" border=0 width=249 height=15 alt="digiplayerbackground2" style="float:left"></td><td height=15></td></tr><tr valign=top><td height=144 rowspan=4 valign=middle><img src="Resources/digiplayerbackgrj.jpeg" border=0 width=6 height=144 alt="digiplayerbackground2" style="float:left"></td><td height=144 colspan=6 rowspan=4><img src="Resources/featuredmessage1.jpeg" border=0 width=230 height=144 alt="" usemap="#map1" style="float:left"></td><td height=144 rowspan=4 valign=middle><img src="Resources/digiplayerbackgrk.jpeg" border=0 width=13 height=144 alt="digiplayerbackground2" style="float:left"></td><td height=1></td></tr><tr valign=top><td height=13></td></tr><tr valign=top><td height=1></td></tr><tr valign=top><td height=129></td></tr><tr valign=top><td height=24 colspan=8 valign=middle><img src="Resources/digiplayerbackgrl.jpeg" border=0 width=249 height=24 alt="digiplayerbackground2" style="float:left"></td><td height=24></td></tr><tr valign=top><td height=15 rowspan=3 valign=middle><img src="Resources/digiplayerbackgrm.jpeg" border=0 width=6 height=15 alt="digiplayerbackground2" style="float:left"></td><td height=15 colspan=4 rowspan=3><img src="Resources/item12.gif" border=0 width=200 height=15 alt="" style="float:left"></td><td height=15 colspan=3 rowspan=3 valign=middle><img src="Resources/digiplayerbackgrn.jpeg" border=0 width=43 height=15 alt="digiplayerbackground2" style="float:left"></td><td height=1></td></tr><tr valign=top><td height=13></td></tr><tr valign=top><td height=1></td></tr><tr valign=top><td height=225 colspan=8 rowspan=7 valign=middle><img src="Resources/digiplayerbackgro.jpeg" border=0 width=249 height=225 alt="digiplayerbackground2" style="float:left"></td><td height=201></td></tr><tr valign=top><td height=20 rowspan=5 valign=middle><img src="Resources/digiplayerbackgrp.jpeg" border=0 width=8 height=20 alt="digiplayerbackground" style="float:left"></td><td height=6 colspan=3 rowspan=2 valign=bottom><img src="Resources/item1.gif" border=0 width=120 height=6 alt="item1" style="float:left"></td><td height=20 rowspan=5><img src="Resources/item1g1a.gif" border=0 width=2 height=20 alt="" style="float:left"></td><td height=6 colspan=3 rowspan=2 valign=bottom><img src="Resources/item1.gif" border=0 width=100 height=6 alt="item1" style="float:left"></td><td height=20 rowspan=5><img src="Resources/item1g1a.gif" border=0 width=2 height=20 alt="" style="float:left"></td><td height=20 rowspan=5><img src="Resources/item1.gif" border=0 width=5 height=20 alt="item1" style="float:left"></td><td height=20 colspan=4 rowspan=5><img src="Resources/item4.jpeg" border=0 width=142 height=20 alt="item4" style="float:left"></td><td height=20 rowspan=5><img src="Resources/item1.gif" border=0 width=5 height=20 alt="item1" style="float:left"></td><td height=20 rowspan=5><img src="Resources/item1g1a.gif" border=0 width=2 height=20 alt="" style="float:left"></td><td height=20 rowspan=5><img src="Resources/item1.gif" border=0 width=104 height=20 alt="item1" style="float:left"></td><td height=20 rowspan=5><img src="Resources/item1g1a.gif" border=0 width=2 height=20 alt="" style="float:left"></td><td height=6 colspan=4 rowspan=2 valign=bottom><img src="Resources/item1.gif" border=0 width=44 height=6 alt="item1" style="float:left"></td><td height=20 rowspan=5 valign=middle><img src="Resources/digiplayerbackgrq.jpeg" border=0 width=8 height=20 alt="digiplayerbackground" style="float:left"></td><td height=4></td></tr><tr valign=top><td height=2></td></tr><tr valign=top><td height=12 rowspan=2 valign=middle><img src="Resources/item1.gif" border=0 width=5 height=12 alt="item1" style="float:left"></td><td height=12 rowspan=2><a href="#" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img2',1,'Resources/dmtchannelguide1.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/dmtchannelguide1a.gif" border=0 width=109 height=12 alt="Channel Guide" style="float:left" id="img2"></a></td><td height=12 rowspan=2 valign=middle><img src="Resources/item1.gif" border=0 width=6 height=12 alt="item1" style="float:left"></td><td height=12 rowspan=2 valign=middle><img src="Resources/item1.gif" border=0 width=13 height=12 alt="item1" style="float:left"></td><td height=12 rowspan=2><a href="advertise.html" target="_blank" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img3',1,'Resources/dmtadvertise.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/dmtadvertisea.gif" border=0 width=72 height=12 alt="Advertise" style="float:left" id="img3"></a></td><td height=12 rowspan=2 valign=middle><img src="Resources/item1.gif" border=0 width=15 height=12 alt="item1" style="float:left"></td><td height=12 rowspan=2 valign=middle><img src="Resources/item1.gif" border=0 width=5 height=12 alt="item1" style="float:left"></td><td height=12 colspan=2 rowspan=2><a href="#" onmouseover="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo');FWLSwap('img4',1,'Resources/help.gif','','Indigo')" onmouseout="FWRestore(1,'Indigo');FWSRestore(top.frames,'Indigo')"><img src="Resources/helpa.gif" border=0 width=32 height=12 alt="Help" style="float:left" id="img4"></a></td><td height=12 rowspan=2 valign=middle><img src="Resources/item1.gif" border=0 width=7 height=12 alt="item1" style="float:left"></td><td height=11></td></tr><tr valign=top><td height=1></td></tr><tr valign=top><td height=2 colspan=3><img src="Resources/item1.gif" border=0 width=120 height=2 alt="item1" style="float:left"></td><td height=2 colspan=3><img src="Resources/item1.gif" border=0 width=100 height=2 alt="item1" style="float:left"></td><td height=2 colspan=4><img src="Resources/item1.gif" border=0 width=44 height=2 alt="item1" style="float:left"></td><td height=2></td></tr><tr valign=top><td height=6 colspan=23 rowspan=2><img src="Resources/digiplayerbackgrr.jpeg" border=0 width=544 height=6 alt="digiplayerbackground" style="float:left"></td><td height=4></td></tr><tr valign=top><td height=2 colspan=4 valign=middle><img src="Resources/digiplayerbackgrs.jpeg" border=0 width=161 height=2 alt="digiplayerbackground2" style="float:left"></td><td height=32 colspan=4 rowspan=3><a href="https://www.apple.com/quicktime/download/" target="_blank"><img src="Resources/qt7badgeqt7requir.gif" border=0 width=88 height=32 alt="qt7badgeQT7required" style="float:left"></a></td><td height=2></td></tr><tr valign=top><td height=19 colspan=30 valign=middle><img src="Resources/digiplayerbackgrt.jpeg" border=0 width=712 height=19 alt="digiplayerbackground2" style="float:left"></td><td height=19></td></tr><tr valign=top><td height=11><img src="Resources/digiplayerbackgru.jpeg" border=0 width=1 height=11 alt="digiplayerbackground2" style="float:left"></td><td height=11 colspan=28><img src="Resources/item8.gif" border=0 width=708 height=11 alt="QuickTime and the QuickTime Logo" style="float:left"></td><td height=11><img src="Resources/digiplayerbackgrv.jpeg" border=0 width=3 height=11 alt="digiplayerbackground2" style="float:left"></td><td height=11></td></tr><tr class="f-sp"><td><img src="Resources/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=4 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=2 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=8 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=5 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=109 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=6 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=2 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=13 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=72 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=15 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=2 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=5 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=29 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=21 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=84 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=8 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=5 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=2 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=104 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=2 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=5 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=31 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=7 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=8 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=6 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=132 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=20 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=3 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=45 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=26 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=4 height=1 alt="" style="float:left"></td><td><img src="Resources/_clear.gif" border=0 width=13 height=1 alt="" style="float:left"></td><td height=1><img src="Resources/_clear.gif" border=0 width=1 height=1 alt="" style="float:left"></td></tr></table><div id="digihome1" style="position:absolute; left:15px; top:99px; width:333px; height:15px; z-index:1"><img src="Resources/digihome1.gif" border=0 width=305 height=10 alt="" style="position:relative; left:2px; top:1px; float:left"></div><div id="DMTStream" style="position:absolute; left:15px; top:124px; width:528px; height:368px; z-index:2"><embed src="http://www.digimusictv.com/movies/bluecataudiopr2.mov" width="528" height="368"pluginspage="/quicktime/download/" controller="true" autoplay="true" loop="false"cache="false" kioskmode="true" saveembedtags ="true" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object></div><div id="DMTChannel468x60" style="position:absolute; left:315px; top:10px; width:468px; height:60px; z-index:3"><!-- START 468x60 AdPeeps.com Code --><p align="center"><iframe src="http://www.digimusictv.com/adpeeps/adpeeps.php?bfunction=showad&amp;uid=100000&amp;bmode=off&amp;bzone=DMT_Channel_468x60&amp;bsize=468x60&amp;btype=4&amp;bpos=default&amp;ver=2.0&amp;brefresh=180&amp;btarget=_blank" frameborder="0" width="468" height="60" scrolling="no" marginheight="0" marginwidth="0"><ilayer src="http://www.digimusictv.com/adpeeps/adpeeps.php?bfunction=showad&amp;uid=100000&amp;bmode=off&amp;bzone=DMT_Channel_468x60&amp;bsize=468x60&amp;btype=4&amp;bpos=default&amp;ver=2.0&amp;brefresh=180&amp;btarget=_blank" frameborder="0" width="468" height="60"></ilayer></iframe></p><!-- END AdPeeps.com Code --></div><div id="item1a" style="position:absolute; left:400px; top:497px; width:90px; height:14px; z-index:4"><!-- Start Send To Friends Code: --><script LANGUAGE="Javascript">function stf_sendtofriends2_0_0000000080(){var stf_path='https://www.sendtofriends.com/stf/sendtofriends2_0.php?buttoncode=00000004680000000080&visiturl=' + encodeURIComponent(document.URL);SendtoFriendsWindow = window.open(stf_path,'SendtoFriends', 'width=290,height=610,toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=no,copyhistory=no,resizable=no,left=20,top=40,screenX=0,screenY=0');SendtoFriendsWindow.focus();}</script><a href="http://www.sendtofriends.com/stf/sendtofriends2_0.php?buttoncode=00000004680000000080&visiturl=http://digimusictv.com" target="_blank" onclick="stf_sendtofriends2_0_0000000080(); event.returnValue = false; return false" title="Send a Link to Your Friends"><img src="http://www.digimusictv.com/image/sendtofriend.gif" border="0"></a><!-- End Send To Friends Code --></div><div id="DMTChannel200x200" style="position:absolute; left:557px; top:292.073px; width:200px; height:200px; z-index:5"><!-- START 200x200 AdPeeps.com Code --><p align="center"><iframe src="http://www.digimusictv.com/adpeeps/adpeeps.php?bfunction=showad&amp;uid=100000&amp;bmode=off&amp;bzone=DMT_Channel_200x200&amp;bsize=200x200&amp;btype=4&amp;bpos=default&amp;ver=2.0&amp;brefresh=180&amp;btarget=_blank" frameborder="0" width="200" height="200" scrolling="no" marginheight="0" marginwidth="0"><ilayer src="http://www.digimusictv.com/adpeeps/adpeeps.php?bfunction=showad&amp;uid=100000&amp;bmode=off&amp;bzone=DMT_Channel_200x200&amp;bsize=200x200&amp;btype=4&amp;bpos=default&amp;ver=2.0&amp;brefresh=180&amp;btarget=_blank" frameborder="0" width="200" height="200"></ilayer></iframe></p><!-- END AdPeeps.com Code --></div><map name="map1"><area alt="CathyLemmonADNchannelguidepic" coords="0,14,118,102" href="http://www.artistdevelopmentnetwork.com/index.asp" target="_blank"></map></div></body></html>

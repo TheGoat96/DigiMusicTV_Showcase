@@ -99,6 +99,38 @@ These are original archive timestamps — the “I was building this then” evi
 4. **Channel page** — [`site-archive/broadcast4.html`](./site-archive/broadcast4.html)
 5. **Partner promo** — [`receipts/partner-promo/`](./receipts/partner-promo)
 
+---
+
+## Channel highlight
+
+| Page | What it did |
+|------|-------------|
+| `broadcast4.html` (2008-11-09) | Custom Digi player UI; QuickTime autoplay of channel `.mov` (e.g. `movies/bluecataudiopr2.mov`) |
+
+Illustrative embed: [`snippets/01-quicktime-channel-embed.html`](./snippets/01-quicktime-channel-embed.html).
+
+<img width="802" height="552" alt="Screenshot 2026-10-10 at 7 44 49 PM" src="https://github.com/user-attachments/assets/0755e385-8f26-47a8-aebc-41892a1ca799" />
+
+### Channel previews and promos
+
+<img width="720" height="420" alt="ecarddmt" src="https://github.com/user-attachments/assets/9dfd06a6-ee24-49d1-85a6-bcb0e4f1dfef" />
+
+<img width="720" height="420" alt="ecardmwalker" src="https://github.com/user-attachments/assets/32c9aed3-7077-4f8a-8a05-80165d7a89ea" />
+
+
+https://github.com/user-attachments/assets/9bea6070-49c0-42f9-bdad-0571395f9def
+
+
+https://github.com/user-attachments/assets/2a9902d3-6cf1-44ca-95b4-f4c39071c3c2
+
+
+https://github.com/user-attachments/assets/b4da6a32-e74d-4428-80ed-db1be9976ccb
+
+
+https://github.com/user-attachments/assets/c66b5c83-555e-4751-b5ef-cbe25c3d9b3f
+
+---
+
 ### Contract preview images
 
 **What is Indie — Content Broadcasting Agreement** (first + last page)
@@ -117,20 +149,6 @@ These are original archive timestamps — the “I was building this then” evi
 
 > Preview images and the royalty package may include third-party details. See [DISCLAIMER.md](./DISCLAIMER.md).
 
----
-
-## Channel highlight
-
-| Page | What it did |
-|------|-------------|
-| `broadcast4.html` (2008-11-09) | Custom Digi player UI; QuickTime autoplay of channel `.mov` (e.g. `movies/bluecataudiopr2.mov`) |
-
-Illustrative embed: [`snippets/01-quicktime-channel-embed.html`](./snippets/01-quicktime-channel-embed.html).
-
-<img width="802" height="552" alt="Screenshot 2026-10-10 at 7 44 49 PM" src="https://github.com/user-attachments/assets/0755e385-8f26-47a8-aebc-41892a1ca799" />
-
-
----
 
 ## How to browse the site archive locally
 

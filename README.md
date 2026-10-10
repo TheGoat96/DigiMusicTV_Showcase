@@ -18,7 +18,7 @@ In the late 2000s, streaming video on the open web was still an emerging idea. A
 - Signed **content-provider** relationships and royalty reporting
 - Hands-on production: I shot and edited the network’s original content
 
-This repository packages the surviving site archive, media kit, contracts, and Digi player evidence as a public-facing retro portfolio.
+This repository packages the surviving site archive, media kit, contract page previews, and Digi player evidence as a public-facing retro portfolio.
 
 ---
 
@@ -27,7 +27,7 @@ This repository packages the surviving site archive, media kit, contracts, and D
 | Path | Contents |
 |------|----------|
 | [`site-archive/`](./site-archive) | Exported DigiMusic TV website (HTML/PHP + curated Resources) |
-| [`receipts/`](./receipts) | Media kit, content-provider contracts, PSA agreements, royalty report, partner promo |
+| [`receipts/`](./receipts) | Media kit, contract page previews, royalty report, partner promo |
 | [`snippets/`](./snippets) | QuickTime Digi player embed excerpt |
 | [`MEDIA/`](./MEDIA) | Branding + channel UI stills |
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | How the QuickTime channel stack worked |
@@ -82,7 +82,7 @@ These are original archive timestamps — the “I was building this then” evi
 
 | Date | Proof |
 |------|--------|
-| **2008-03** | Signed content-provider / PSA paperwork (What is Indie, Music In Schools Today, Under The Radar) |
+| **2008-03** | Content-provider / PSA agreement page scans (What is Indie, Music In Schools Today) |
 | **2008-06-04** | Stand Alone Productions royalty report |
 | **2008-08-22** | Media kit brochure (`Alternative Solution Brochure.pdf`) |
 | **2008-11-09** | `broadcast4.html` — QuickTime Digi player channel |
@@ -94,12 +94,30 @@ These are original archive timestamps — the “I was building this then” evi
 ### Where the files live
 
 1. **Media kit** — [`receipts/media-kit/`](./receipts/media-kit)
-2. **Contracts / PSAs** — [`receipts/contracts/`](./receipts/contracts)
+2. **Contract previews** — [`receipts/contract-previews/`](./receipts/contract-previews)
 3. **Royalty report** — [`receipts/royalty/`](./receipts/royalty)
 4. **Channel page** — [`site-archive/broadcast4.html`](./site-archive/broadcast4.html)
 5. **Partner promo** — [`receipts/partner-promo/`](./receipts/partner-promo)
 
-> Before making this repository public, review signed PDFs and the royalty package for third-party PII. See [DISCLAIMER.md](./DISCLAIMER.md).
+### Contract preview images
+
+Full fax PDFs are omitted (GitHub’s viewer shows them blank). PNG scans instead:
+
+**What is Indie — Content Broadcasting Agreement** (first + last page)
+
+![What is Indie page 1](./receipts/contract-previews/what-is-indie-page-01-of-06.png)
+
+![What is Indie page 6](./receipts/contract-previews/what-is-indie-page-06-of-06.png)
+
+**Music In Schools Today Agreement (signed)** (all pages)
+
+![Music In Schools Today page 1](./receipts/contract-previews/music-in-schools-today-page-01-of-03.png)
+
+![Music In Schools Today page 2](./receipts/contract-previews/music-in-schools-today-page-02-of-03.png)
+
+![Music In Schools Today page 3](./receipts/contract-previews/music-in-schools-today-page-03-of-03.png)
+
+> Preview images and the royalty package may include third-party details. See [DISCLAIMER.md](./DISCLAIMER.md).
 
 ---
 

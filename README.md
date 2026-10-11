@@ -1,16 +1,12 @@
-# DigiMusic TV — Independent Streaming Network (Showcase)
-
-An independent music-community streaming network I built and operated around **2008** — including the website, QuickTime Digi player channel, monetization model, content-provider deals, and **original programming I shot and edited**.
-
-This is the project that pulled me into tech on my own: founder, builder, and creator at once, during the same early era when consumer streaming TV was still taking shape.
-
-Archival / portfolio material only. Not a live product. This showcase focuses on the **QuickTime Digi player era**.
-
----
-
 ## The story
 
-In the late 2000s, streaming video on the open web was still an emerging idea. Alongside that wave, I independently stood up **DigiMusic TV** (`digimusictv.com`) — a broadband channel aimed at musicians and the music community:
+This is the indie project that ushered me into tech and I have never looked back.
+
+With no formal training in coding — just a passion for creativity and music, and curiosity about building something with code — I independently stood up **DigiMusic TV** (`digimusictv.com`) in the late 2000s, when streaming video on the open web was still an emerging idea. It was a broadband channel aimed at musicians and the music community.
+
+I self-funded the whole stack: my own cameras and laptops, an Apple rack server, and a dedicated T1 internet connection to host and deliver the channel.
+
+What I built and ran:
 
 - Original interviews, educational segments, history, and events across genres
 - A custom **Digi player** channel UI powered by Apple QuickTime progressive `.mov` delivery
@@ -19,6 +15,16 @@ In the late 2000s, streaming video on the open web was still an emerging idea. A
 - Hands-on production: I shot and edited the network’s original content
 
 This repository packages the surviving site archive, media kit, contract page previews, and Digi player evidence as a public-facing retro portfolio.
+
+---
+
+# DigiMusic TV — Independent Streaming Network (2008 Showcase)
+
+An independent music-community streaming network I built and operated around **2008** — including the website, QuickTime Digi player channel, monetization model, content-provider deals, and **original programming I shot and edited**.
+
+This is the project that pulled me into tech on my own: founder, builder, and creator at once, during the same early era when consumer streaming TV was still taking shape.
+
+Archival / portfolio material only. Not a live product. This showcase focuses on the **QuickTime Digi player era**.
 
 ---
 

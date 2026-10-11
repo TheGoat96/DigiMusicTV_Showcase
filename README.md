@@ -2,7 +2,7 @@
 
 This is the indie project that ushered me into tech and I have never looked back.
 
-With no formal training in coding — just a passion for creativity and music, and curiosity about building something with code — I independently stood up **DigiMusic TV** (`digimusictv.com`) in the late 2000s, when streaming video on the open web was still an emerging idea. It was a broadband channel aimed at musicians and the music community.
+With no formal training in coding — just a passion for creativity and music, and curiosity about building something with code — I independently stood up **DigiMusic TV** (`digimusictv.com`) in the early 2000s, when streaming video on the open web was still an emerging idea. It was a broadband channel aimed at musicians and the music community.
 
 I self-funded the whole stack: my own cameras and laptops, an Apple rack server, and a dedicated T1 internet connection to host and deliver the channel.
 

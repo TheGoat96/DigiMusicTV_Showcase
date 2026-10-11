@@ -117,17 +117,13 @@ Illustrative embed: [`snippets/01-quicktime-channel-embed.html`](./snippets/01-q
 
 <img width="720" height="420" alt="ecardmwalker" src="https://github.com/user-attachments/assets/32c9aed3-7077-4f8a-8a05-80165d7a89ea" />
 
+https://github.com/user-attachments/assets/7e84cc70-d7a2-44e9-b63c-9b1e4cb531d2
 
-https://github.com/user-attachments/assets/9bea6070-49c0-42f9-bdad-0571395f9def
+https://github.com/user-attachments/assets/0befe6a4-fbc4-4f9a-b255-6a8b419ff9b9
 
+https://github.com/user-attachments/assets/ad8e09a0-c8a4-4c57-8a95-b080c67c828d
 
-https://github.com/user-attachments/assets/2a9902d3-6cf1-44ca-95b4-f4c39071c3c2
-
-
-https://github.com/user-attachments/assets/b4da6a32-e74d-4428-80ed-db1be9976ccb
-
-
-https://github.com/user-attachments/assets/c66b5c83-555e-4751-b5ef-cbe25c3d9b3f
+https://github.com/user-attachments/assets/2b2a9c3d-b27d-4894-9798-a7f17d96b551
 
 ---
 
